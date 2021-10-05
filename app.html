@@ -2,7 +2,7 @@
 <html lang="en" class="h-100">
 
 <head>
-    <title>AppName: Code Challenge by Alex Baker</title>
+    <title>Rewind: Code Challenge by Alex Baker</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -25,7 +25,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark  fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="/index.html"><img src="/img/logocolortransparent.svg" width="45px"
-                    alt="Navbar logo" class=" d-align-block align-text-center p-0">&nbsp;&nbsp;AppName</a>
+                    alt="Navbar logo" class=" d-align-block align-text-center p-0">&nbsp;&nbsp;Rewind</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -54,19 +54,30 @@
     </nav>
     <main id="content" class="flex-shrink-0">
         <div class="container">
-
-            <h1>The App UI Goes Here</h1>
-
-            <input id="message" type="text" placeholder="Enter a message" required>
-            <button id="btnSubmit" type="button" class="btn btn-dark">Display Message</button>
-
-
-
-
-            </form>
-
-
-
+            <div class="row row-cols-1">
+                <div class="col col-md-6">
+                    <h1>Rewind: A Coding Project Using JavaScript</h1>
+                    <p>This project reverses a string using a decremented for loop.</p>
+                </div>
+                <div class="col col-md-6">
+                    <h5 class="border-bottom border-dark border-2">Enter a string to reverse.</h5>
+                    <form class="row gx-3 gy-2">
+                        <div class="col-12">
+                            <input type="text" id="userString" class="form-control" required
+                                placeholder="Enter more than 2 characters" />
+                        </div>
+                        <div class="col-12">
+                            <button type="button" id="btnSubmit" class="btn btn-danger">Reverse!</button>
+                        </div>
+                    </form>
+                    <hr />
+                    <div class="resultsContainer">
+                        <h3 class="border-bottom border-dark border-3">Results</h3>
+                        <p id="results">
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
@@ -108,9 +119,9 @@
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="/js/site.js"></script>
     <script>
-        document.getElementById('btnSubmit').addEventListener("click", displayMessage)
+        document.getElementById('btnSubmit').addEventListener("click", getString)
     </script>
-    
+
 </body>
 
 

@@ -7,9 +7,9 @@
 }
 
 body {
-    padding-top:5rem;
+    padding-top: 5rem;
     color: var(--dark-color);
-    
+
 }
 
 
@@ -71,7 +71,7 @@ body {
     position: absolute;
     padding: 5px;
     width: 4rem;
-    bottom: 0 ;
+    bottom: 0;
 }
 
 
@@ -90,6 +90,13 @@ body {
 .htmlicon {
     color: orangered
 }
-.checkList>li i{
+
+.checkList>li i {
     color: var(--secondary-color);
+}
+
+.resultsContainer {
+    background-color: var(--secondary-color);
+    padding: 5px;
+    height: 30vh;
 }
